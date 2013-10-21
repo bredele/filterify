@@ -8,6 +8,10 @@
 
 module.exports = function(fn) {
 	return function(arr) {
-		return arr.filter(fn);
+		var cp = [];
+		for(var i = 0, l = arr.length; i < l; i++) {
+			if(fn(arr[i])) cp.push(arr[i]);
+		}
+		return cp;
 	};
 };
