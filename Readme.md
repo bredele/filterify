@@ -1,7 +1,6 @@
-
 # filterify
 
-  Wrap around array map and turns any function into a filtering
+  Turns any function into an array mapping
 
 ## Installation
 
@@ -9,9 +8,16 @@
 
     $ component install bredele/filterify
 
-## API
+## Usage
 
+```js
+var filterify = require('filterify');
+var pair = filterify(function(n){return !(n % 2);});
 
+pair([1,2,3]);
+// [2]
+
+```
 
 ## License
 
