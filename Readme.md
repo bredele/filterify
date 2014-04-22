@@ -1,6 +1,6 @@
 # filterify
 
-  Turns any function into an array mapping
+  Turns any function into an array filter
 
 ## Installation
 
